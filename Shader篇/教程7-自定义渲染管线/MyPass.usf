@@ -1,0 +1,21 @@
+#include "Common.ush"
+
+void MainVS(
+ in float4 InPosition : ATTRIBUTE0,
+ in float2 InUV : ATTRIBUTE1,
+ out float2 OutUV : TEXCOORD0,
+ out float4 OutPosition : SV_POSITION
+ )
+{
+ // screenspace position from vb
+    OutPosition = InPosition;
+    OutUV = InUV;
+}
+
+void MainPS(
+    in float2 UV : TEXCOORD0,
+    out float4 OutColor : SV_Target0
+    )
+{
+    OutColor = float4(0.0f, 1.0f, 0.0f, 1.0f);
+}
