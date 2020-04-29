@@ -1,0 +1,14 @@
+half3 CalcMyColor_001()
+{
+	return half3(1, 0, 0);
+}
+
+half3 CalcMyColor_002()
+{
+	return half3(0, 1, 0);
+}
+
+half3 CalcMyColor_003()
+{
+	return half3(0, 0, 1);
+}
